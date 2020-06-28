@@ -1,2 +1,6 @@
+
 # m-erl
-monz private erlang cookbook
+
+wow your nosey!
+
+this is monz' private erlang cookbook.
