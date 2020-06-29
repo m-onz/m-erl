@@ -48,14 +48,13 @@ read_message (Block) ->
   io:format("Block:~p~nMsg=~p~n", [ Block, Msg ]),
   io:format("~p~n", [ Prev ]),
   case Prev of
-    nil   -> true;
     <<>>  -> true;
     _     -> read_message(Prev)
   end.
 
 test () ->
    blockchain:make_key("monz"),
-   BLOCK1 = blockchain:add_block(nil, "monz", "turnips 1"),
+   BLOCK1 = blockchain:add_block(<<>>, "monz", "turnips 1"),
    BLOCK2 = blockchain:add_block(BLOCK1, "monz", "turnips 2"),
    BLOCK3 = blockchain:add_block(BLOCK2, "monz", "turnips 3"),
    read_message(BLOCK3).
