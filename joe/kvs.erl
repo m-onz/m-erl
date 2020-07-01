@@ -21,7 +21,7 @@ loop () ->
       put(Key, { ok, Value }),
       From ! { kvs, true },
       loop();
-    { From, { lookup, Key }} ->
+    { From, { lookup, Key } } ->
       From ! { kvs, get(Key) },
       loop()
   end.

@@ -1,4 +1,4 @@
-%%
+
 %% hash.erl
 %% @author m-onz
 %%
@@ -23,8 +23,6 @@ bin_to_hexstr(Bin) ->
 %%
 %% example usage:
 %% hash:file("beam.text", sha)
-%%
-%%
 %% sha1 :: sha
 %% sha2 :: sha224 | sha256 | sha384 | sha512
 %% sha3 :: sha3_224 | sha3_256 | sha3_384 | sha3_512*

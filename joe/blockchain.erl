@@ -1,7 +1,6 @@
 
 -module(blockchain).
 -export([ add_block/3, make_key/1, read_message/1, test/0 ]).
-%% -compile(export_all).
 
 bin_to_hexstr(Bin) ->
   lists:flatten([io_lib:format("~2.16.0B", [X]) ||
