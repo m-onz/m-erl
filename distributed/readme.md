@@ -7,12 +7,11 @@ On each machine run...
 
 ```sh
 
-erl -sname <machine_name> -setcookie <cluster_namespace>
+erl -sname dilbert -setcookie <cluster_namespace>
 
 ```
 
 There are different ways to connect the mesh, this uses an RPC call establish connections between machines.
-Once you have connected different machines individually the rest form a full connected mesh.
 
 ```erlang
 
