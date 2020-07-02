@@ -1,7 +1,9 @@
 
 # Distributed erlang
 
-## Form an erlang cluster with multiple machines on the same subnet.
+These are notes on forming an erlang cluster with multiple machines on the same subnet.
+This is practically identical to formaing an erlang cluster on the same machine.
+Forming a cluster in more advanced network configurations or over the internet is slightly more complicated.
 
 On each machine run...
 
@@ -25,7 +27,7 @@ Erlang clusters form a fully connected mesh by default (each machine can contact
 
 ```erlang
 
-node()
+node().
 
 ```
 
@@ -33,6 +35,6 @@ node()
 
 ```erlang
 
-nodes()
+nodes().
 
 ```
