@@ -1,4 +1,2 @@
 
 # m-erl
-
-erlang cookbook.
